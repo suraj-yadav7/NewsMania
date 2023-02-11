@@ -11,7 +11,7 @@ import {
 
 export class App extends Component {
 
-apiKey=process.env.REACT_APP_NEWS_API
+apiKey=process.env.React_App_NewsMania
 
 state={
     progress:0
