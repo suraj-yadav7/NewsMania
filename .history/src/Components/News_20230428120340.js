@@ -84,7 +84,7 @@ const News=(props)=> {
         >
       <div className="row">
     {articles.map((e)=>{
-      return <div className='col-md-4 my-2' key={e.url} >
+      return <div className='col-md-4 my-3' key={e.url} >
         <NewsItem title={e.title?e.title.slice(0,40):""} description={e.description?e.description.slice(0,80):""} imageUrl={e.urlToImage} newsUrl={e.url} author={e.author?e.author.slice(0,10):"Unknow"} date={new Date(e.publishedAt).toGMTString()} source={e.source.name.split(" ")} />
       </div>
       })}

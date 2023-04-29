@@ -15,14 +15,18 @@ const apiKey=process.env.REACT_APP_NEWS_API
 
 const [progress,setProgress]=useState(0)
 
+
+
+
     return (
       <Routers>
       <>
         <Navbar   />
         <LoadingBar
         color='#f11946'
-        progress={progress}/>
-        
+        progress={progress}
+       
+      />
         <Routes>
         <Route  exact path="/" element={<News apiKey={apiKey} setProgress={setProgress} country="in" category="general" pageSize={9} />} />
         {/* <Route  exact path="/general" element={<News apiKey={apiKey} setProgress={this.setProgress} country="in" key="general" category="general" pageSize={9} />} /> */}

@@ -6,7 +6,7 @@ const NewsItem = (props) => {
   return (
     <>
 
-      <div className="card mx-auto" style={{ width: "300px",height:"28rem",}}>
+      <div className="card mx-auto" style={{ width: "300px",height:"28rem",marginTop:"10px" }}>
         <div style={{ display: "flex", justifyContent: 'flex-end', position: "absolute", right: "0" }}>
           <span className="badge rounded-pill bg-danger " > {source}</span>
         </div>
